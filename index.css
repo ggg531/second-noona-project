@@ -1,0 +1,52 @@
+.box1 {
+    border: 50px solid red;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.box2 {
+    border: 50px solid green;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: none;  /* 삭제 */
+    visibility: hidden; /* 제외 */ 
+}
+
+.box3 {
+    border: 50px solid blue;
+    width: 200px;
+    padding: 50px;
+}
+
+h1 {
+    color: #9b59b6;
+}
+h1::before { /* 모든 h1 태그 전 */
+    content: "Topic: ";
+}
+h1:first-child { /* h1 태그의 only 첫 번쨰 태그 */
+    text-align: center;
+}
+p {
+    font-style: italic; /* 글씨 스타일 */
+    font-size: 16px;
+    font-family: Verdana; /* 글씨체 */
+}
+p::first-letter { /* p 태그 첫 번째 글씨만 */
+    font-size: 200%;
+    color: #2980b9;
+}
+
+.subheader {
+    color: #2980b9;
+}
+.challenge2 {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    padding-left: 10%;
+}
